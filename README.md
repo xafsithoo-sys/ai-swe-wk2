@@ -147,5 +147,6 @@ Author: Hafsa Hajir
 ]
 🔗 GitHub: https://github.com/xafsithoo-sys
 
+## Pitch deck link https://www.canva.com/design/DAG2C0kRkgI/OiL_3ElWsEVTVe-KtPBGWQ/edit?utm_content=DAG2C0kRkgI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
 
