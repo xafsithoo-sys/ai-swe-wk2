@@ -1,0 +1,26 @@
+# Ignore Python cache and temp files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore model checkpoints and data
+*.h5
+*.pkl
+*.joblib
+*.csv
+*.xlsx
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore environment folders
+.env/
+.venv/
+venv/
+ENV/
+env/
+
+# Ignore Streamlit cache
+.streamlit/
