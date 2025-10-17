@@ -1,93 +1,151 @@
-🌍 Kenya Water AI — Predicting Weather & Rainfall for a Sustainable Future
-💧 Overview
+# 🌍 Kenya Water AI — Predicting Rainfall & Weather Patterns
 
-Kenya Water AI is an AI-powered web application designed to predict rainfall and weather conditions across Kenyan counties.
-Using machine learning (TensorFlow) and Streamlit, this tool provides accurate climate forecasts, visual analytics, and interactive exploration of weather patterns.
+## 📘 Overview
+**Kenya Water AI** is a Streamlit-based machine learning app designed to analyze and predict regional rainfall and weather patterns across Kenya.  
+This project aligns with **United Nations Sustainable Development Goal (SDG) 6: Clean Water and Sanitation**, aiming to support **sustainable water resource management** through AI-driven insights.  
 
-This project contributes directly to:
+The app uses key climate features such as **year, month, temperature, humidity, windspeed, and rainfall** to forecast rainfall trends and visualize regional weather changes — promoting data-driven environmental decision-making.
 
-🌊 SDG 6 – Clean Water and Sanitation: by supporting better planning and management of water resources through predictive analytics.
+---
 
-🌦️ SDG 13 – Climate Action: by using AI to monitor and predict changing climate patterns, helping communities prepare for weather extremes.
+## 🚀 Features
+- 🌦️ **Rainfall & Weather Prediction** — Predict rainfall levels using trained ML models  
+- 🗺️ **Interactive Map** — Visualize rainfall trends and regional patterns across Kenya  
+- 📈 **Data Visualization** — Monthly temperature comparisons and humidity trends  
+- 🔍 **User Input Interface** — Enter custom data to generate predictions instantly  
+- 🧠 **AI-Powered** — Built using TensorFlow for smart and scalable predictions  
 
-🚀 Features
+---
 
-✅ Rainfall & Weather Prediction – AI model predicts rainfall levels and temperature patterns.
-✅ Interactive Visualization – Explore weather trends by county, year, and month.
-✅ Dynamic Charts – Compare temperature, humidity, and rainfall visually.
-✅ User-Friendly Interface – Built with Streamlit for smooth and interactive experience.
-✅ Supports UN SDGs – Enables data-driven decision-making for climate resilience.
+## 🎯 SDG Alignment
+| SDG | Description | Project Contribution |
+|-----|--------------|----------------------|
+| 🧩 **SDG 6 — Clean Water and Sanitation** | Ensure availability and sustainable management of water and sanitation for all. | Uses AI to predict rainfall patterns and support water management planning in Kenya. |
 
-🧠 Tech Stack
+---
 
-Frontend & App: Streamlit
+## 🧠 Model Training Notebook (Google Colab)
+You can view the full training process and model development steps here:  
+👉 [**Open in Google Colab**](https://colab.research.google.com/drive/1S1UE4oiei4vHRchtkEpNXBIzaLuwlIne?usp=sharing)
 
-Backend & AI Model: TensorFlow / Keras
+---
 
-Data Handling: Pandas, NumPy
+## 💻 App Demo Screenshots
 
-Visualization: Matplotlib, Plotly
+### 🏠 App Home
+![App Home](images/demo.png)
 
-Language: Python
+### 🌧️ Rainfall Prediction
+![Rainfall Prediction](images/demo3.png)
 
-⚙️ Installation & Setup
-1️⃣ Clone the Repository
-git clone https://github.com/yourusername/kenya_water_ai.git
-cd kenya_water_ai
+### 📊 Regional Weather Insights
+![Weather Insights](images/demo2.png)
 
-2️⃣ Install Dependencies
+---
 
-Make sure you have Python 3.12+ installed.
+## ⚙️ Tech Stack
+- **Frontend:** Streamlit  
+- **Backend / ML Framework:** TensorFlow, Scikit-learn  
+- **Visualization:** Matplotlib, Plotly  
+- **Language:** Python  
+- **Environment:** Google Colab, VS Code  
+
+---
+
+## 🧩 Folder Structure
+olutions for global challenges
+kenya_water_ai/
+│
+├── app.py # Streamlit app
+├── scaler.pkl # Scaler used in training
+├── requirements.txt # Required dependencies
+├── rainfall_data.csv # Dataset used in app
+├── images/ # Screenshots for README
+│ ├── demo.png
+│ ├── demo2.png
+│ └── demo3.png
+└── README.md
+
+
+---
+
+## 🧰 Installation & Setup
+1. Clone this repository  
+   ```bash
+   git clone https://github.com/yourusername/kenya_water_ai.git
+   cd kenya_water_ai
+
+
+Create a virtual environment (optional but recommended)
+
+python -m venv venv
+venv\Scripts\activate      # On Windows
+source venv/bin/activate   # On macOS/Linux
+
+
+Install dependencies
 
 pip install -r requirements.txt
 
-3️⃣ Run the Streamlit App
+
+Run the Streamlit app
+
 streamlit run app.py
 
-💡 Project Structure
-kenya_water_ai/
-│
-├── app.py                  # Main Streamlit app
-├── model/                  # Trained AI model
-├── data/                   # Dataset (cleaned)
-├── images/                 # Demo screenshots
-├── requirements.txt
-└── README.md
+🧾 Requirements
 
-🌍 SDG Impact
-🧩 SDG 6 – Clean Water and Sanitation
+Example of a simple requirements.txt:
 
-Promotes efficient water resource planning.
+streamlit
+tensorflow-cpu
+scikit-learn
+pandas
+numpy
+matplotlib
+plotly
 
-Helps identify potential drought or flood regions in advance.
+🧹 .gitignore
 
-Encourages sustainable water management practices using AI insights.
+Add this .gitignore to keep your repo clean:
 
-🌦️ SDG 13 – Climate Action
+venv/
+__pycache__/
+*.pkl
+*.h5
+.DS_Store
+*.csv
+*.ipynb_checkpoints
+.env
 
-Uses predictive modeling to anticipate weather changes.
+🌟 Future Improvements
 
-Aids policymakers in responding to climate variability.
+Add regional drought and flood predictions
 
-Raises awareness of environmental data-driven solutions.
+Integrate live meteorological API data
 
-🌍 Kenya Water AI — Demo Screenshots
-🏠 App Home
+Build mobile-friendly UI
 
-💧 Rainfall Prediction Chart
+✨ Acknowledgements
 
-📊 County Weather Trends
+UN SDGs framework for sustainable development
 
-🙌 Contributing
+Streamlit for enabling quick deployment of AI apps
 
-Contributions are welcome!
-If you’d like to improve predictions or add new features (like drought detection or satellite data integration), feel free to fork this repository and submit a pull request.
+TensorFlow for model training
 
-📜 License
+Kenya Meteorological Data for climate insights
 
-This project is licensed under the MIT License — free to use and modify with credit.
+🤝 Contributing
 
-✨ Author
+Pull requests and feedback are welcome!
+If you'd like to contribute to this project, please fork the repo and submit a PR.
 
-Hafsa Hajir
-AI for Climate & Sustainability 🌍 | Passionate about data-driven solutions for global challenges
+📬 Contact
+
+Author: Hafsa Hajir
+📧 Email: [hafsahajir87@gmail.com
+]
+🔗 GitHub: https://github.com/xafsithoo-sys
+
+
+
